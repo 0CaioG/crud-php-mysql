@@ -9,4 +9,5 @@
   </head>
   <body class="bg-dark text-light">
     <?php require __DIR__.'/navbar.php'?>
+<!--Essa div so é fechada no arquivo footer.php-->
     <div class="container mt-5">

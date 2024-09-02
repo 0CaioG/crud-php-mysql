@@ -18,6 +18,8 @@ include '../includes/header.php';
                         $sql = "SELECT * FROM users WHERE id='".$user_id."'";
                         $query = mysqli_query($connect, $sql);
 
+                        //Verificando se o usuario com o respectivo id existe
+                        
                         if(mysqli_num_rows($query) > 0) {
                             $user = mysqli_fetch_array($query);
                 ?>

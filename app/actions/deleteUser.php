@@ -10,6 +10,8 @@ if(isset($_POST['delete_user'])){
 
     mysqli_query($connect,$sql);
 
+    //Verificando se os dados foram excluidos do banco
+    
     if(mysqli_affected_rows($connect) > 0){
         $_SESSION['mensagem'] = 'Usuário Excluído com sucesso!';
         $_SESSION['status'] = 'success';

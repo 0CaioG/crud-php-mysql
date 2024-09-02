@@ -1,6 +1,10 @@
 <?php
 if(isset($_SESSION['mensagem']) && isset($_SESSION['status'])){
 
+    /*Verificando se a alteração/inserção no banco foi bem sucedida
+    *A cor do container da mensagem muda de acordo com o valor de $_SESSION['status']
+    */
+    
     if($_SESSION['status'] == "success"){
 ?>
 <div class="alert alert-warning alert-dismissible fade show">

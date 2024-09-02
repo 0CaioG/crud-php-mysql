@@ -28,6 +28,9 @@ include '../includes/header.php';
                             $query = 'SELECT * FROM users';
                             $users = mysqli_query($connect,$query);
                             if(mysqli_num_rows($users) > 0){
+                                
+                                //Estrutura de repetição responsavel por percorrer todas as linhas presentes na tabela
+
                                 foreach($users as $user){
                         ?>
                         <tr>
